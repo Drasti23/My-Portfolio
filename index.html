@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script>
+    function showImageModal(imageSrc) {
+      // Show the modal and set the image source
+      const modal = document.getElementById("imageModal");
+      const modalImage = document.getElementById("modalImage");
+      modalImage.src = imageSrc;
+      modal.style.display = "flex";  // Show the modal
+      document.body.classList.add("modal-open");  // Apply blur effect to body
+    }
+  
+    function closeImageModal() {
+      // Close the modal
+      const modal = document.getElementById("imageModal");
+      modal.style.display = "none";  // Hide the modal
+      document.body.classList.remove("modal-open");  // Remove the blur effect
+    }
+  </script>
+  
+  
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Drasti Parikh Portfolio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon1.jpg" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h1 class="sitename">Drasti Parikh</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="mailto:drastiparikh23@gmail.com" class="gmail"><i class="bi bi-envelope"></i></a>
+      <a href="https://github.com/Drasti23" class="github"><i class="bi bi-github"></i></a>
+      <a href="https://www.linkedin.com/in/drasti-parikh-a25b05232/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#skills"><i class="bi bi-briefcase navicon"></i> Skills</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="#awards"><i class="bi bi-trophy navicon"></i> Awards and Achievements</a></li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2>Drasti Parikh</h2>
+        <p>I'm <span class="typed" data-typed-items="Full Stack Developer, Backend Engineer, Tech Enthusiast">Full Stack Developer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>Hello! I'm Drasti Parikh, a passionate Full Stack Developer with a background in Computer Programming and Analysis. I have experience building web and mobile applications using technologies like React.js, Node.js, and MongoDB. I'm currently working on my capstone project, which focuses on building a comprehensive app for small business management. My goal is to create impactful solutions that simplify complex problems.</p>
+      </div>      
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="assets/img/my-profile-img.jpg" class="img-fluid" alt="Drasti's Profile Picture">
+          </div>
+          <div class="col-lg-8 content">
+            <h2>Full Stack Developer &amp; Aspiring Software Engineer.</h2>
+            <p class="fst-italic py-3">
+              A passionate developer with experience in web and mobile applications, I enjoy creating innovative solutions to real-world problems. Proficient in Java, Python, and C++, I’ve developed applications ranging from e-commerce platforms to HR management systems.
+
+<br><br>I thrive in collaborative environments with hands-on experience in Agile methodologies, ensuring timely project delivery. My expertise in full-stack development, including front-end and back-end, coupled with a strong grasp of data structures and algorithms, allows me to design efficient software solutions.
+<br><br>Fueled by a desire to constantly learn and grow, I have honed my skills in full-stack development, database management, and modern frameworks like React, Node.js, and Next.js. My dedication to excellence is reflected in my academic achievements, including placement on the Dean's Honors List and certifications in cutting-edge technologies.
+
+<br><br>Driven by curiosity and innovation, I aim to build impactful applications that enhance user experience and bring value to organizations. Let's create something exceptional together!
+             </p> </div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+  <!-- Skills Section -->
+<section id="skills" class="skills section light-background">
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Skills</h2>
+    <p>I am proficient in a variety of tools and technologies that enable me to build efficient, scalable, and user-friendly applications.</p>
+  </div><!-- End Section Title -->
+
+  <!-- Skills Cards -->
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row skills-content">
+      
+<!-- Skill 1: HTML -->
+<div class="col-md-4">
+  <div class="skill-card">
+    <div class="skill-icon">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML" width="40px" height="40px">
+    </div>
+    <h4>HTML</h4>
+    <p>Proficient in building structured web pages using HTML5 elements and attributes.</p>
+  </div>
+</div>
+
+<!-- Skill 2: CSS -->
+<div class="col-md-4">
+  <div class="skill-card">
+    <div class="skill-icon">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" alt="CSS" width="40px" height="40px">
+    </div>
+    <h4>CSS</h4>
+    <p>Skilled in styling and designing responsive, user-friendly web pages with CSS3 and frameworks like Bootstrap.</p>
+  </div>
+</div>
+
+<!-- Skill 3: JavaScript -->
+<div class="col-md-4">
+  <div class="skill-card">
+    <div class="skill-icon">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript" width="40px" height="40px">
+    </div>
+    <h4>JavaScript</h4>
+    <p>Experience in creating interactive and dynamic websites with JavaScript and modern JS frameworks.</p>
+  </div>
+</div>
+
+<!-- Skill 4: React.js -->
+<div class="col-md-4">
+  <div class="skill-card">
+    <div class="skill-icon">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React.js" width="40px" height="40px">
+    </div>
+    <h4>React.js</h4>
+    <p>Building efficient, scalable web applications with React.js and its ecosystem.</p>
+  </div>
+</div>
+
+<!-- Skill 5: Node.js -->
+<div class="col-md-4">
+  <div class="skill-card">
+    <div class="skill-icon">
+      <img src="nodejs.jpg" alt="Node.js" width="40px" height="40px">
+    </div>
+    <h4>Node.js</h4>
+    <p>Proficient in building backend applications using Node.js and Express for RESTful services.</p>
+  </div>
+</div>
+
+<!-- Skill 6: MongoDB -->
+<div class="col-md-4">
+  <div class="skill-card">
+    <div class="skill-icon">
+      <img src="mongodb.jpg" alt="MongoDB" width="40px" height="40px">
+    </div>
+    <h4>MongoDB</h4>
+    <p>Experience in designing, implementing, and managing NoSQL databases using MongoDB.</p>
+  </div>
+</div>
+
+<!-- Skill 7: Java -->
+<div class="col-md-4">
+  <div class="skill-card">
+    <div class="skill-icon">
+      <img src="java.jpg" alt="Java" width="40px" height="40px">
+    </div>
+    <h4>Java</h4>
+    <p>Proficient in developing robust, object-oriented applications using Java.</p>
+  </div>
+</div>
+
+<!-- Skill 8: Python -->
+<div class="col-md-4">
+  <div class="skill-card">
+    <div class="skill-icon">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python" width="40px" height="40px">
+    </div>
+    <h4>Python</h4>
+    <p>Skilled in using Python for data analysis, machine learning, and backend development.</p>
+  </div>
+</div>
+
+<!-- Skill 9: Git & GitHub -->
+<div class="col-md-4">
+  <div class="skill-card">
+    <div class="skill-icon">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg" alt="Git" width="40px" height="40px">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" width="40px" height="40px">
+    </div>
+    <h4>Git & GitHub</h4>
+    <p>Proficient in version control with Git, collaborating through GitHub for team projects.</p>
+  </div>
+</div>
+
+    </div><!-- End Skills Content -->
+  </div><!-- End Container -->
+</section>
+
+
+            
+<!-- Resume Section -->
+<section id="resume" class="resume section">
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Resume</h2>
+    <p>Click the button below to view or download my resume:</p>
+  </div><!-- End Section Title -->
+
+  <div class="container text-center" data-aos="fade-up" data-aos-delay="100">
+    <a href="MyResume.pdf" class="btn btn-primary" target="_blank" download>
+      <i class="bi bi-file-earmark-arrow-down"></i> View / Download Resume
+    </a>
+  </div>
+</section>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="portfolio section light-background">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Portfolio</h2>
+    <p>Explore my collection of projects that showcase my skills in web development, system design, and software engineering. Each project reflects my dedication to delivering high-quality solutions that solve real-world problems.</p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+      <!-- Project 1 -->
+      <div class="col-lg-4 col-md-6 portfolio-item" onclick="selectProject(this)">
+        <div class="card portfolio-card">
+          <div class="card-body">
+            <h5 class="portfolio-name card-title">EventBooking-TechTitans</h5>
+            <div class="portfolio-image-container">
+              <img src="assets/img/portfolio/project-1.jpg" class="img-fluid portfolio-image" alt="">
+            </div>
+            <p class="portfolio-description card-text">EventBooking-TechTitans is a cutting-edge, microservices-based platform tailored for George Brown College to streamline room bookings and event management.</p>
+          </div>
+          <div class="tech-icons">
+            <i class="devicon-java-plain" style="font-size: 24px; color: #007396;" title="Java"></i>
+            <i class="devicon-spring-plain" style="font-size: 24px; color: #6DB33F;" title="Spring"></i>
+            <i class="devicon-docker-plain" style="font-size: 24px; color: #0db7ed;" title="Docker"></i>
+          </div>
+          <div class="card-footer portfolio-buttons">
+            <a href="https://github.com/Drasti23/COMP3095_Assignment2_Group23" target="_blank" class="btn btn-primary">
+                <i class="bi bi-github"></i>Check Github
+            </a>
+        </div>
+        
+        
+        </div>
+      </div><!-- End Portfolio Item -->
+
+            <!-- Project 7 -->
+            <div class="col-lg-4 col-md-6 portfolio-item" onclick="selectProject(this)">
+              <div class="card portfolio-card">
+                <div class="card-body">
+                  <h5 class="portfolio-name card-title">Employee Management Hub</h5>
+                  <div class="portfolio-image-container">
+                    <img src="assets/img/portfolio/project-7.jpg" class="img-fluid portfolio-image" alt="">
+                  </div>
+                  <p class="portfolio-description card-text">Employee Management Hub is a full-stack web application designed for efficient employee management using NodeJS, Express, MongoDB, and ReactJS.</p>
+                </div>
+                <div class="tech-icons">
+                  <i class="devicon-nodejs-plain" style="font-size: 24px; color: #339933;" title="Node.js"></i>
+                  <i class="devicon-express-original-wordmark" style="font-size: 32px; color: #000000;" title="Express.js"></i>
+                  <i class="devicon-mongodb-plain" style="font-size: 24px; color: #47A248;" title="MongoDB"></i>
+                  <i class="devicon-react-original" style="font-size: 24px; color: #61DAFB;" title="React"></i>
+                </div>
+                
+                <div class="card-footer portfolio-buttons">
+                  <a href="https://github.com/Drasti23/Employee-Management-App" target="_blank" class="btn btn-primary"><i class="bi bi-github"></i>Check Github</a>
+                  
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+      
+
+      <!-- Project 3 -->
+      <div class="col-lg-4 col-md-6 portfolio-item" onclick="selectProject(this)">
+        <div class="card portfolio-card">
+          <div class="card-body">
+            <h5 class="portfolio-name card-title">Bus Transit Management System</h5>
+            <div class="portfolio-image-container">
+              <img src="assets/img/portfolio/project-3.jpg" class="img-fluid portfolio-image" alt="">
+            </div>
+            <p class="portfolio-description card-text">Bus Transit Management System is a comprehensive database management system designed for ABC Bus Transit Company to optimize their operations across buses, drivers, routes, trips, passengers, and staff.</p>
+          </div>
+          <div class="tech-icons">
+            <i class="devicon-mysql-plain" style="font-size: 24px; color: #3572A5;" title="MySQL"></i>
+            <i class="devicon-python-plain" style="font-size: 24px; color: #000;" title="Python"></i>
+            <i class="devicon-sqlite-plain" style="font-size: 24px; color: #003B57;" title="SQLite"></i>
+          </div>
+          <div class="card-footer portfolio-buttons">
+            <a href="https://github.com/Drasti23/Bus-Transit-Management-System" target="_blank" class="btn btn-primary"><i class="bi bi-github"></i>Check Github</a>
+            
+          </div>
+        </div>
+      </div><!-- End Portfolio Item -->
+
+      <!-- Project 4 -->
+      <div class="col-lg-4 col-md-6 portfolio-item" onclick="selectProject(this)">
+        <div class="card portfolio-card">
+          <div class="card-body">
+            <h5 class="portfolio-name card-title">Plan your Trip web app</h5>
+            <div class="portfolio-image-container">
+              <img src="assets/img/portfolio/project-4.jpg" class="img-fluid portfolio-image" alt="">
+            </div>
+            <p class="portfolio-description card-text">"Plan your Trip" is an interactive web application, inspired by leading travel platforms like Expedia. Built using ASP.NET Core MVC with C#.</p>
+          </div>
+          <div class="tech-icons">
+            <i class="devicon-react-original" style="font-size: 24px; color: #61DAFB;" title="React"></i>
+            <i class="devicon-nodejs-plain" style="font-size: 24px; color: #68A063;" title="Node.js"></i>
+            <i class="devicon-mongodb-plain" style="font-size: 24px; color: #47A248;" title="MongoDB"></i>
+          </div>
+          <div class="card-footer portfolio-buttons">
+            <a href="https://github.com/Om21o7/COMP2139-SERGIO" target="_blank" class="btn btn-primary"><i class="bi bi-github"></i>Check Github</a>
+            
+          </div>
+        </div>
+      </div><!-- End Portfolio Item -->
+
+      <!-- Project 5 -->
+      <div class="col-lg-4 col-md-6 portfolio-item" onclick="selectProject(this)">
+        <div class="card portfolio-card">
+          <div class="card-body">
+            <h5 class="portfolio-name card-title">ShopEasy-Py</h5>
+            <div class="portfolio-image-container">
+              <img src="assets/img/portfolio/project-5.jpg" class="img-fluid portfolio-image" alt="">
+            </div>
+            <p class="portfolio-description card-text">ShopEasy-Py is a Python-based online store application designed to provide a seamless shopping experience, featuring bulk discounts and combo deals.</p>
+          </div>
+          <div class="tech-icons">
+            <i class="devicon-python-plain" style="font-size: 24px; color: #3776AB;" title="Python"></i>
+            <i class="devicon-flask-original" style="font-size: 24px; color: #000000;" title="Flask"></i>
+            <i class="devicon-postgresql-plain" style="font-size: 24px; color: #336791;" title="PostgreSQL"></i>
+          </div>
+          
+          <div class="card-footer portfolio-buttons">
+            
+            <a href="https://github.com/Drasti23/ShopEasy-Py" target="_blank" class="btn btn-primary"><i class="bi bi-github"></i>Check Github</a>
+            
+          </div>
+        </div>
+      </div><!-- End Portfolio Item -->
+
+      <!-- Project 6 -->
+      <div class="col-lg-4 col-md-6 portfolio-item" onclick="selectProject(this)">
+        <div class="card portfolio-card">
+          <div class="card-body">
+            <h5 class="portfolio-name card-title">House Prices - Advanced Regression Techniques</h5>
+            <div class="portfolio-image-container">
+              <img src="assets/img/portfolio/project-6.jpg" class="img-fluid portfolio-image" alt="">
+            </div>
+            <p class="portfolio-description card-text">House Prices - Advanced Regression Techniques is a Python-based predictive modeling project developed for the Kaggle competition, focused on forecasting house sale prices.</p>
+          </div>
+          <div class="tech-icons">
+            <i class="devicon-python-plain" style="font-size: 24px; color: #3776AB;" title="Python"></i>
+            <i class="devicon-pandas-plain" style="font-size: 24px; color: #150458;" title="Pandas"></i>
+            <i class="devicon-numpy-plain" style="font-size: 24px; color: #013243;" title="NumPy"></i>
+          </div>
+          
+          <div class="card-footer portfolio-buttons">
+            <a href="https://github.com/Drasti23/House-Prices-Advanced-Regression-Techniques" target="_blank" class="btn btn-primary"><i class="bi bi-github"></i>Check Github</a>
+            
+          </div>
+        </div>
+      </div><!-- End Portfolio Item -->
+
+<!-- Project 2 -->
+<div class="col-lg-4 col-md-6 portfolio-item" onclick="selectProject(this)">
+  <div class="card portfolio-card">
+    <div class="card-body">
+      <h5 class="portfolio-name card-title">On call tutoring web app</h5>
+      <div class="portfolio-image-container">
+        <img src="assets/img/portfolio/project-2.jpg" class="img-fluid portfolio-image" alt="">
+      </div>
+      <p class="portfolio-description card-text">OnCallTutor is a dynamic, PHP-driven web application designed to connect students with available tutors in real-time, fostering spontaneous learning and collaboration.</p>
+    </div>
+    <div class="tech-icons">
+      <i class="devicon-php-plain" style="font-size: 24px; color: #777BB4;" title="PHP"></i>
+      <i class="devicon-mysql-plain" style="font-size: 24px; color: #00758F;" title="MySQL"></i>
+      <i class="devicon-bootstrap-plain" style="font-size: 24px; color: #563D7C;" title="Bootstrap"></i>
+    </div>
+    <div class="card-footer portfolio-buttons">
+      <a href="https://github.com/your-username/OnCallTutor" target="_blank" class="btn btn-primary"><i class="bi bi-github"></i>Check Github</a>
+      
+    </div>
+  </div>
+</div><!-- End Portfolio Item -->
+
+      <!-- Project 8 -->
+      <div class="col-lg-4 col-md-6 portfolio-item" onclick="selectProject(this)">
+        <div class="card portfolio-card">
+          <div class="card-body">
+            <h5 class="portfolio-name card-title">ManageX</h5>
+            <div class="portfolio-image-container">
+              <img src="assets/img/portfolio/project-8.jpg" class="img-fluid portfolio-image" alt="">
+            </div>
+            <p class="portfolio-description card-text">ManageX is a robust business management platform tailored for SMEs, featuring employee management, POS, payroll automation, and a manager dashboard.</p>
+          </div>
+          <div class="tech-icons">
+            <i class="devicon-react-original" style="font-size: 24px; color: #61DAFB;" title="React"></i>
+            <i class="devicon-nodejs-plain" style="font-size: 24px; color: #339933;" title="Node.js"></i>
+            <i class="devicon-firebase-plain" style="font-size: 24px; color: #FFCA28;" title="Firebase"></i>
+            <i class="devicon-docker-plain" style="font-size: 24px; color: #0db7ed;" title="Docker"></i>
+          </div>
+          
+          <div class="card-footer portfolio-buttons">
+            <a href="https://github.com/Drasti23/ManageX" target="_blank" class="btn btn-primary"><i class="bi bi-github"></i>Check Github</a>
+            
+          </div>
+        </div>
+      </div><!-- End Portfolio Item -->
+
+    </div><!-- End Portfolio Container -->
+
+  </div>
+
+</section><!-- /Portfolio Section -->
+
+<!-- JavaScript -->
+<script>
+  function selectProject(project) {
+    // Remove the selected class from all portfolio items
+    const allProjects = document.querySelectorAll('.portfolio-item');
+    allProjects.forEach(item => item.classList.remove('selected'));
+
+    // Add the selected class to the clicked project
+    project.classList.add('selected');
+  }
+</script>
+
+
+
+
+<!-- Modal for Enlarging Dean's Letter Image -->
+<div id="imageModal" class="modal" onclick="closeImageModal()">
+  <div class="modal-content">
+    <span class="close" onclick="closeImageModal()">&times;</span>
+    <img id="modalImage" class="modal-image" src="" alt="Dean Letter" />
+  </div>
+</div>
+
+<!-- Awards & Achievements Section -->
+<section id="awards" class="awards section">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Awards & Achievements</h2>
+    <p>Recognitions and accolades I have received during my academic journey.</p>
+  </div>
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <ul class="awards-list">
+      <li>
+        <i class="bi bi-award-fill"></i> Dean's Letters for Academic Excellence (Semesters 1-5)
+        <!-- Thumbnail Images of Dean's Letters -->
+         <br>
+        <div class="award-item" onclick="showImageModal('dean-letter-sem1.jpg')">
+          <img src="dean-letter-sem1.jpg" alt="Dean Letter 1" />
+        </div>
+        <div class="award-item" onclick="showImageModal('dean-letter-sem2.jpg')">
+          <img src="dean-letter-sem2.jpg" alt="Dean Letter 2" />
+        </div>
+        <div class="award-item" onclick="showImageModal('dean-letter-sem3.jpg')">
+          <img src="dean-letter-sem3.jpg" alt="Dean Letter 3" />
+        </div>
+        <div class="award-item" onclick="showImageModal('dean-letter-sem4.jpg')">
+          <img src="dean-letter-sem4.jpg" alt="Dean Letter 4" />
+        </div>
+        <div class="award-item" onclick="showImageModal('dean-letter-sem5.jpg')">
+          <img src="dean-letter-sem5.jpg" alt="Dean Letter 5" />
+        </div>
+      </li>
+      <li>
+        <i class="bi bi-award-fill"></i> Udemy Certificate for React - The Complete Guide 2024 (incl. Next.js, Redux)
+        <!-- Thumbnail Image of Udemy Certificate -->
+        <div class="award-item" onclick="showImageModal('react-udemy-certificate.jpg')">
+          <img src="react-udemy-certificate.jpg" alt="React Udemy Certificate" />
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+
+
+<!-- Contact Section -->
+<section id="contact" class="contact section" style="background-color: #f9f9f9; padding: 60px 0;">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2 style="font-family: 'Roboto', sans-serif; color: #333; font-weight: 700;">Contact</h2>
+    <p style="font-family: 'Roboto', sans-serif; color: #555;">Feel free to reach out—let's build something amazing together!</p>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-5">
+
+        <div class="info-wrap" style="background-color: #fff; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); padding: 30px;">
+          
+          <!-- Address -->
+          <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200" style="margin-bottom: 20px;">
+            <i class="bi bi-geo-alt flex-shrink-0" style="color: #5d5d5d; font-size: 24px;"></i>
+            <div style="margin-left: 15px;">
+              <h3 style="font-family: 'Roboto', sans-serif; color: #333;">Address</h3>
+              <p style="font-family: 'Roboto', sans-serif; color: #777;">Toronto, Ontario</p>
+            </div>
+          </div><!-- End Info Item -->
+
+          <!-- Call Us -->
+          <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300" style="margin-bottom: 20px;">
+            <i class="bi bi-telephone flex-shrink-0" style="color: #5d5d5d; font-size: 24px;"></i>
+            <div style="margin-left: 15px;">
+              <h3 style="font-family: 'Roboto', sans-serif; color: #333;">Call Me</h3>
+              <p style="font-family: 'Roboto', sans-serif; color: #777;">+1 416-835-2367</p>
+            </div>
+          </div><!-- End Info Item -->
+
+          <!-- Email -->
+          <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+            <i class="bi bi-envelope flex-shrink-0" style="color: #5d5d5d; font-size: 24px;"></i>
+            <div style="margin-left: 15px;">
+              <h3 style="font-family: 'Roboto', sans-serif; color: #333;">Email Me</h3>
+              <p style="font-family: 'Roboto', sans-serif; color: #777;">drastiparikh23@gmail.com</p>
+            </div>
+          </div><!-- End Info Item -->
+
+          <!-- Map -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.5093796641966!2d-79.38318668457362!3d43.65322637912102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34d8e4d8e7ff%3A0x671c4a44a8a3e18e!2sToronto%2C%20ON!5e0!3m2!1sen!2sca!4v1676961268712!5m2!1sen!2sca" frameborder="0" style="border: 0; width: 100%; height: 270px; border-radius: 8px; margin-top: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div><!-- End Contact Info -->
+
+      <div class="col-lg-7">
+        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200" style="background-color: #fff; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); padding: 30px;">
+          <div class="row gy-4">
+
+            <div class="col-md-6">
+              <label for="name-field" class="pb-2" style="font-family: 'Roboto', sans-serif; color: #333;">Your Name</label>
+              <input type="text" name="name" id="name-field" class="form-control" style="border-radius: 6px; border: 1px solid #ddd;" required="">
+            </div>
+
+            <div class="col-md-6">
+              <label for="email-field" class="pb-2" style="font-family: 'Roboto', sans-serif; color: #333;">Your Email</label>
+              <input type="email" class="form-control" name="email" id="email-field" style="border-radius: 6px; border: 1px solid #ddd;" required="">
+            </div>
+
+            <div class="col-md-12">
+              <label for="subject-field" class="pb-2" style="font-family: 'Roboto', sans-serif; color: #333;">Subject</label>
+              <input type="text" class="form-control" name="subject" id="subject-field" style="border-radius: 6px; border: 1px solid #ddd;" required="">
+            </div>
+
+            <div class="col-md-12">
+              <label for="message-field" class="pb-2" style="font-family: 'Roboto', sans-serif; color: #333;">Message</label>
+              <textarea class="form-control" name="message" rows="10" id="message-field" style="border-radius: 6px; border: 1px solid #ddd;" required=""></textarea>
+            </div>
+
+            <div class="col-md-12 text-center">
+              <div class="loading">Loading...</div>
+              <div class="error-message" style="color: #f44336;"></div>
+              <div class="sent-message" style="color: #4caf50;">Your message has been sent. Thank you!</div>
+
+              <button type="submit" style="background-color: #007bff; color: white; border: none; padding: 10px 30px; border-radius: 30px; transition: background-color 0.3s;">Send Message</button>
+            </div>
+
+          </div>
+        </form>
+      </div><!-- End Contact Form -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Contact Section -->
+
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Drasti Parikh</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <!-- Add this just before the closing </body> tag -->
+
+
+</body>
+
+</html>
