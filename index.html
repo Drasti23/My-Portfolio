@@ -672,6 +672,33 @@
   <!-- Add this just before the closing </body> tag -->
 
 
+  <script>
+    const form = document.querySelector('.php-email-form');
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+  
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+      })
+      .then(response => response.json())
+      .then(data => {
+        if (data.ok) {
+          document.querySelector('.sent-message').style.display = 'block';
+          document.querySelector('.error-message').style.display = 'none';
+        } else {
+          document.querySelector('.sent-message').style.display = 'none';
+          document.querySelector('.error-message').innerText = 'There was an issue sending your message. Please try again later.';
+          document.querySelector('.error-message').style.display = 'block';
+        }
+      })
+      .catch((error) => {
+        document.querySelector('.sent-message').style.display = 'none';
+        document.querySelector('.error-message').innerText = 'There was an issue sending your message. Please try again later.';
+        document.querySelector('.error-message').style.display = 'block';
+      });
+    });
+  </script>
 </body>
 
 </html>
